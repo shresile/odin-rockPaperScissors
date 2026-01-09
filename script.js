@@ -74,6 +74,14 @@ function playGame(){
     playRound(humanSelection, computerSelection);
     console.log(`Round 5, your score is ${humanScore}, computer's score is ${computerScore}!`);
 
+    console.log(`Final score: your score is ${humanScore}, computer's score is ${computerScore}!`);
+
+    if (humanScore > computerScore){
+        console.log("YOU WIN!");
+    } else{
+        console.log("COMPUTER WINS!");
+    }
+
 
 
     function playRound(humanChoice,ComputerChoice){
